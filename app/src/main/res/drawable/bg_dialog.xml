@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow Layer (Light Gray at the bottom) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#D3D3D3" /> <!-- Light gray shadow color -->
+            <corners android:radius="20dp" />
+            <padding android:bottom="1dp" /> <!-- Adjust for shadow effect -->
+        </shape>
+    </item>
+
+    <!-- Main Background Layer (White) -->
+    <item android:top="0dp" android:bottom="10dp"> <!-- Top layer to overlap shadow -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Dialog main background color -->
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+</layer-list>

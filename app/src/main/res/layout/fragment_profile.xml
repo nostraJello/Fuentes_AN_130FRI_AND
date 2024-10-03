@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragmentHeader"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/nameHeader"
+            android:layout_below="@+id/fragmentHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_below="@+id/nameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:textSize="14sp"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/emailHeader"
+            android:layout_below="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_below="@+id/emailHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"/>
+
+        <LinearLayout
+            android:id="@+id/infoLayout"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/genderLayout"
+                android:layout_below="@+id/editTextEmail"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/genderHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Gender"
+                    android:textSize="16sp"
+                    android:layout_marginTop="16dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupGender"
+                    android:layout_below="@+id/genderHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Male"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Female"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Other"
+                        android:textSize="14sp"/>
+                </RadioGroup>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/interestLayout"
+                android:layout_below="@+id/editTextEmail"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/interestHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Interests"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="16sp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBoxSports"
+                    android:layout_below="@+id/interestHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Sports"/>
+
+                <CheckBox
+                    android:id="@+id/checkBoxMusic"
+                    android:layout_below="@+id/checkBoxSports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Music"
+                    android:textSize="14sp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBoxArt"
+                    android:layout_below="@+id/checkBoxMusic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Art"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Save"
+            android:textSize="14sp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/infoLayout"/>
+    </RelativeLayout>
+</ScrollView>

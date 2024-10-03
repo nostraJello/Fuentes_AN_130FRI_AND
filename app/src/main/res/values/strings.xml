@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BottomNavigation</string>
+    <string name="backSpace">⌫</string>
+</resources>
