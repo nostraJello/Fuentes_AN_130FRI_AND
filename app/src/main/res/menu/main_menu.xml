@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_first_option"
+        android:title="Go to Fragment"
+        android:icon="@drawable/ic_fragment"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_second_option"
+        android:title="Show Dialog"
+        android:icon="@drawable/ic_dialog"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_third_option"
+        android:title="More Options"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_exit"
+                android:title="Exit App"
+                android:icon="@drawable/ic_exit"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_description">
+        Ingredients:
+        2 cups all purpose flour
+        1tbsp baking powder
+        1/2 cup white sugar
+        1/4 tsp salt
+        1 tbsp melted margarine, butter or cooking oil
+        1/4 cup evaporated milk
+        1 pc large egg
+        1 tsp vanilla flavor
+        1/2 cup sesame seeds
+        cooking oil for frying
+    </string>
+    <string name="dialog_description">
+        Indulge in the delightful taste of Binangkal, a beloved Filipino treat that originates from Cebu. These deep-fried dough balls are made from a mixture of rice flour and coconut, giving them a unique chewy texture. Magluto nata!
+    </string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mainDialog"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp">
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Asa man ka?"
+            android:textSize="20sp"
+            android:fontFamily="@font/medium"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/dialogImage"
+            android:layout_height="150dp"
+            android:layout_width="300dp"
+            android:layout_below="@+id/dialogTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/img_cardo" />
+
+        <TextView
+            android:id="@+id/dialogDescription"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/dialogImage"
+            android:layout_marginTop="4dp"
+            android:text="@string/dialog_description"
+            android:justificationMode="inter_word"/>
+
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dialogDescription"
+            android:layout_marginTop="12dp">
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Positive"
+                android:textSize="13sp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/standard"/>
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Negative"
+                android:textSize="13sp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/positiveButton"
+                android:fontFamily="@font/standard"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/fragmentHeader"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Binangkal Recipe 1"
+        android:fontFamily="@font/medium"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:id="@+id/fragmentDescription"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Ingredients:\n2 cups all purpose flour\n1 tbsp baking powder\n1/2 cup white sugar\n1/4 tsp salt\n1 tbsp melted margarine, butter or cooking oil\n1/4 cup evaporated milk\n1 pc large egg\n1 tsp vanilla flavor\n1/2 cup sesame seeds\ncooking oil for frying"
+        android:layout_below="@+id/fragmentHeader"
+        android:justificationMode="inter_word"
+        android:textSize="15sp"
+        android:fontFamily="@font/standard"
+        android:lineSpacingExtra="2dp"/>
+
+    <ImageView
+        android:id="@+id/fragmentImage"
+        android:layout_height="250dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/fragmentDescription"
+        android:background="@drawable/img_binangkal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+
+</RelativeLayout>
